@@ -9,10 +9,10 @@ export default function Quiz(props) {
             elementArray.push(
                 <div className="question-cont">
                     <h2 className="question-header">Question nr: {i + 1}</h2>
-                    <p className="question-text">Alternative Nr: 1</p>
-                    <p className="question-text">Alternative Nr: 2</p>
-                    <p className="question-text">Alternative Nr: 3</p>
-                    <p className="question-text">Alternative Nr: 4</p>
+                    <p className="question-text">Alt Nr: 1</p>
+                    <p className="question-text">Alt Nr: 2</p>
+                    <p className="question-text">Alt Nr: 3</p>
+                    <p className="question-text">Alt Nr: 4</p>
                 </div>
             )
         }

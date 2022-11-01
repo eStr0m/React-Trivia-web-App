@@ -135,7 +135,21 @@ button {
 }
 
 .question-cont {
-  background-color: blue;
-  display: grid;
+  background-color: wheat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: start;
+
+}
+
+.question-cont h2 {
+  width: 100%;
+}
+
+.question-cont p {
+  background-color: #94D7A2;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9px;
+  margin-right: 0.8rem;
 }
