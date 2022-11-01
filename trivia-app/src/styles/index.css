@@ -1,0 +1,141 @@
+/* ___ VARIABLES ___ */
+
+:root {
+  /* __ TYPO __ */
+--fw-small: 500;
+--fw-medium: 600;
+--fw-large: 700;
+
+
+
+  /* __ COLOUR __ */
+--fc-light: #F5EDED;
+--fc-dark: #293264;
+
+--bg-light: #F5F7FB;
+--bg-dark: #292323;
+
+--input-blank:transparent;
+--input-picked:#D6DBF5;
+--input-correct:#94D7A2;
+--input-wrong:#F8BCBC;
+
+--border-clr:#4D5B9E;
+
+
+  /* __ SIZE __ */
+--footer-height:1.5rem;
+--btn-deco-size: calc((1em * 0.5)*5);
+}
+
+
+/* __ FONT __ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+h1, h2, h3, h4 {
+  font-family: 'Karla';
+  color: var(--fc-dark);
+}
+
+p, input {
+  font-family: 'Inter';
+  font-weight: var(--fw-small);
+  color: var(--fc-dark);
+}
+
+button {
+  font-family: 'Inter';
+  font-weight: var(--fw-medium);
+  color: var(--fc-light);
+}
+
+
+
+
+
+
+
+/* __ BACKGROUND BODY __ */
+
+.app-Bg {
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 75px 35px;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.app-Bg::before {
+  content: url(/public/yellow-blob.png);
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 1;
+}
+.app-Bg::after {
+  content: url(/public/blue-blob.png);
+  position: fixed;
+  bottom:-2px;
+  left: 0;
+  z-index: 1;
+}
+
+
+
+
+/* ___ MODAL ___ */
+
+.modal-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.modal-header {
+  font-size: 1.953rem;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.modal-desc {
+  font-size: 1rem;
+  color: var(--fc-dark);
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.modal-btn {
+  width: 200px;
+  height: 55px;
+  border-radius: 15px;
+  background-color: var(--fc-dark);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+
+/* ___ QUESTIONS TAB ___ */
+
+.questions {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.question-cont {
+  background-color: blue;
+  display: grid;
+  text-align: start;
+}

@@ -1,0 +1,38 @@
+:root {
+        /* __ TYPO __ */
+
+    --fs-11: 0.7rem; /* consider exchanging for 1REM */
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.4rem;
+    --fs-32: 1.7rem;
+
+    --fw-small: 500;
+    --fw-medium: 600;
+    --fw-large: 700;
+
+
+
+        /* __ COLOUR __ */
+    --fc-light: #F5EDED;
+    --fc-dark: #293264;
+    
+    --bg-light: #292323;
+    --bg-dark: #F5F7FB;
+    
+    --btn-dark: #820303;
+
+    --input-blank:transparent;
+    --input-picked:#D6DBF5;
+    --input-correct:#94D7A2;
+    --input-wrong:#F8BCBC;
+
+    --border-clr:#4D5B9E;
+    
+
+        /* __ SIZE __ */
+    --footer-height:1.5rem;
+    --btn-deco-size: calc((1em * 0.5)*5);
+}
+
